@@ -1,0 +1,5 @@
+name: Personal Management System
+description: Personal management system for Webpro
+type: module
+core_version_requirement: ^9
+package: Personal Management System

@@ -1,0 +1,29 @@
+<?php
+function management_schema(){
+    $schema['management'] = ['description' =>'Test table'],
+    'fields'=>['id' =>['description' =>'Identifier of the table',
+    'type' =>'serial','not null'=>TRUE, 'unsigned'=>TRUE,],
+        
+    'first_name'=>['description'=>'First Name',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],
+
+    'last_name'=>['description'=>'Last Name',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],],
+
+    'email'=>['description'=>'Email',
+    'type'=>'varchar','length'=>'60','not null'=>TRUE,],],
+
+    'phone_number'=>['description'=>'Phone Number',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],],
+
+    'salary'=>['description'=>'Salary',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],],
+
+    'hire_date'=>['description'=>'Hire Date',
+    'type'=>'varchar','length'=>'40','not null'=>TRUE,],],
+
+    'primary key'=>['id'],];
+    return $schema;
+}
+
+?>

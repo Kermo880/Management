@@ -1,0 +1,23 @@
+management.management_controller_listing:
+  path: 'management'
+  defaults:
+    _controller: 'Drupal\management\Controller\ManagementController::Listing'
+    _title: 'Listing Records'
+  requirements:
+    _permission: 'access content'
+
+management.management_form:
+  path: 'management/form/data'
+  defaults:
+    _form: 'Drupal\management\Form\ManagementForm'
+    _title: 'ADD / EDIT Form'
+  requirements:
+    _permission: 'TRUE'
+
+management.delete_form:
+  path: 'management/form/delete/{cid}'
+  defaults:
+    _form: 'Drupal\management\Form\DeleteForm'
+    _title: 'Delete Records'
+  requirements:
+    _permission: 'TRUE'

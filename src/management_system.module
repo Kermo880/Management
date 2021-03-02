@@ -1,0 +1,15 @@
+<?php
+function management_menu(){
+    $item['management']=array('title'=>'List Records','description'=>'','route'=>'
+    management.management_controller_listing');
+
+    $item['management/form/data']=array('title'=>'ADD / EDIT Form','description'=>'','route'=>'
+    management.management_form');
+
+    $item['management/form/delete/{cid}']=array('title'=>'Delete Records','description'=>'','route'=>'
+    management.delete_form');
+
+    return $item;
+}
+
+?>
